@@ -1,0 +1,45 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Wedding Gallery Section */
+.wedding-gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.wedding-gallery h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.collage-container {
+  display: flex;
+  justify-content: center;
+}
+
+.wedding-collage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+.wedding-collage:hover {
+  transform: scale(1.05);
+}
+
+.wedding-collage.visible {
+  opacity: 1;
+}
